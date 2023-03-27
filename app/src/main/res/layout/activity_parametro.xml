@@ -4,27 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ParametroActivity">
 
-    <TextView
-        android:id="@+id/parametroTv"
+    <EditText
+        android:id="@+id/parametroEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nenhum parâmetro!"
+        android:hint="Entre com o parâmetro"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <Button
-        android:id="@+id/entrarParametroBt"
+        android:id="@+id/enviarParametroBt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Entrar parâmetro"
+        android:text="Enviar parâmetro"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/parametroTv"
+        app:layout_constraintTop_toBottomOf="@+id/parametroEt"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
